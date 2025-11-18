@@ -19,43 +19,45 @@
         android:gravity="start"
         />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp">
 
         <Button
             android:id="@+id/toast_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#4F0000"
+            android:text="@string/toast_button"
             app:cornerRadius="0dp"
-            android:text="@string/toast_button" />
+            android:layout_alignParentTop="true" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="@string/text_view_0"
-            android:textSize="200sp"
-            android:textColor="#FFFFFF"
+            android:id="@+id/O_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/toast_button"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="0dp"
             android:background="@drawable/gradient_background"
-            android:layout_margin="0dp"
             android:gravity="center"
-            />
+            android:text="@string/text_view_0"
+            android:textColor="#FFFFFF"
+            android:textSize="200sp" />
 
         <Button
             android:id="@+id/count_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#36002D"
-            android:layout_margin="0dp"
+            android:text="@string/count_button"
+            android:layout_below="@+id/toast_button"
             app:cornerRadius="0dp"
-            android:text="@string/count_button" />
+            />
 
-    </LinearLayout>
+    </RelativeLayout>
+
 
 
 
