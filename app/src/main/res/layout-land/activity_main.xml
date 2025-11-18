@@ -29,13 +29,11 @@
             android:id="@+id/toast_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="169dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="168dp"
             android:backgroundTint="#4F0000"
             android:text="@string/toast_button"
             app:cornerRadius="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/count_button"
-            app:layout_constraintEnd_toStartOf="@+id/O_view"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,12 +58,10 @@
             android:id="@+id/count_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="169dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
             android:backgroundTint="#36002D"
             android:text="@string/count_button"
             app:cornerRadius="0dp"
-            app:layout_constraintEnd_toStartOf="@+id/O_view"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toast_button" />
 
