@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_toast"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/gradient_background"
+        android:padding="10dp"
+        android:gravity="start"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/toast_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4F0000"
+            app:cornerRadius="0dp"
+            android:text="@string/toast_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/text_view_0"
+            android:textSize="200sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/gradient_background"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/count_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#36002D"
+            android:layout_margin="0dp"
+            app:cornerRadius="0dp"
+            android:text="@string/count_button" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
